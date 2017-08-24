@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:OperationForms"
+             x:Class="OperationForms.MainPage">
+    <StackLayout Padding="10" Spacing="10">
+        <Label Text="Q2: Delegados" 
+           VerticalOptions="Start" 
+           HorizontalOptions="Center" />
+        <StackLayout>
+            <Label Text="Ingrese Operador 1:"/>
+            <Entry Text="{Binding NumberA}" Placeholder="0"/>
+            <Label Text="Ingrese Operador 2:"/>
+            <Entry Text="{Binding NumberB}" Placeholder="0"/>
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Calcular" Command="{Binding CommandDivide}"/>
+        </StackLayout>
+        <StackLayout >
+            <Label Text="Resultado: "/>
+            <Label Text="{Binding Result}"/>
+            <Label Text=" {Binding MessageZeroDivide}"/>
+        </StackLayout>
+
+    </StackLayout>
+    
+	
+
+</ContentPage>
